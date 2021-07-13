@@ -1,0 +1,93 @@
+/* ================================ Index ================================ */
+.mainIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .presentacion{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .containerTextos{
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .textoPresentacion {
+            text-align: center;
+            margin-top: 2rem;
+            color: black;
+        }
+        
+        .containerTextos__titulo {
+            @include textosPrincipales(3rem, 600);
+        }
+
+        .containerTextos__subtitulo {
+            @include textosPrincipales(2.4rem, 100);
+        }
+        
+        .mensajeEmpeza{
+            text-align: center;
+            margin-top: 30px;
+
+            
+            .btnNegro {
+                margin-top: 0.5rem;
+                width: 27rem;
+                height: 3rem;
+                @include botonNegro();
+            }
+
+            .btnNegro:hover {
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+                transform: scale(1.05,1.05);
+            }
+        }
+
+        .imagenPrincipal{
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+
+    .mainIndex {
+        .presentacion{
+            .containerTextos__titulo {
+                @include textosPrincipales(3rem, 600);
+            }
+
+            .imagenPrincipal{
+                margin: auto;
+                display: flex;
+                width: 33rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+
+    .mainIndex {
+        .presentacion {
+            .containerTextos__titulo {
+                @include textosPrincipales(4.4rem, 600);
+            }
+        
+            .mensajeEmpeza{
+                font-size: small;
+            }
+
+            .imagenPrincipal{
+                display: flex;
+                width: 50rem;
+            }
+        }  
+    }
+}

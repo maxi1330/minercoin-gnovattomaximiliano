@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="description" content="Minercoin es una empresa de fabricacion, armado, mantenimiento de rigs de mineria de criptomonedas."/>
+    <meta name="keywords" content="MINERIA, MINERO, CRIPTO, CRIPTOMONEDAS, ETH, BTC, ETHEREUM, BITCOIN, INVERSIONES"/>
+    <title>Minercoin - Desafio 12 </title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img class="navbar__logo"
+                src="resources/logo.png"
+                alt="Logo"/>
+
+            <ul class="navbar__links">
+                <li><a href="" class="navLink">INICIO</a></li>
+                <li><a href="servicios.html" class="navLink">SERVICIOS</a></li>
+                <li><a href="shop.html" class="navLink">SHOP</a></li>
+                <li><a href="contacto.html" class="navLink">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="mainIndex">
+        <div id="carouselExampleFade" class="carousel slide col-10 container-fluid" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <section class="presentacion">
+                        <div class="containerTextos">
+                            <div>
+                                <h1 class="textoPresentacion containerTextos__titulo">
+                                    Invertí en tecnología.<br/>
+                                    Garantizá tu ingreso.
+                                </h1>
+                            </div>
+                            <div>
+                                <p class="textoPresentacion containerTextos__subtitulo"> 
+                                    Minería de Criptodivisas<br/>
+                                    Construcción de RIGs<br/>
+                                    Asesoría financiera y tecnológica</p>
+                            </div>
+                            <br/>
+                            <div class="mensajeEmpeza">
+                                <p>¿Te interesa entrar al mundo minero?</p>
+                                <button type="button" class="btnNegro" data-bs-toggle="modal" data-bs-target="#modalIndex">Empezá ya mismo</button>
+                            </div>
+                        </div>
+                        <img
+                            class="imagenPrincipal" 
+                            src="resources/ethereum-mining-rewards.jpeg"/>
+                    </section>
+                </div>
+                <div class="carousel-item">
+                    <section class="presentacion">
+                        <div class="containerTextos">
+                            <div>
+                                <p class="textoPresentacion containerTextos__titulo">
+                                    Un equipo seguro<br/>para comenzar a<br/>minar cryptodivisas.</p>
+                            </div>
+                            
+                            <div class="mensajeEmpeza">
+                                <button type="button" class="btnNegro" data-bs-toggle="modal" data-bs-target="#modalIndex">Conoce todos los servicios</button>
+                            </div>
+                        </div>
+                        <img
+                        class="imagenPrincipal" 
+                        src="resources/fondo transparente.jpg"/>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalIndex" tabindex="-1" aria-labelledby="modalIndex" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalIndex">Empezá ya mismo!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Este es un mensaje de prueba
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    
+</body>
+</html>

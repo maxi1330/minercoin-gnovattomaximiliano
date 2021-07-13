@@ -1,0 +1,142 @@
+$color-primario: #113a56;
+$color-secundario: #ffc26a;
+$big-font: 4rem;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ================================ Estilos Generales ================================ */
+html {
+    font-size: 62.5%;
+}
+
+body * {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+/* ================================ Header General ================================ */
+
+header {
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: $color-primario;
+
+    .navbar {
+        background-color: $color-primario;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .navbar__logo {
+            background-color: $color-primario;
+            margin: auto;
+            align-items: flex-start;
+            width: 250px;
+            height: 40px;
+            z-index: 1;
+        }
+
+        .navbar__links {
+            margin-top: 1rem;
+            background-color: $color-primario;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            list-style: none;
+
+            li {
+                background-color: $color-primario; 
+
+                .navLink {
+                    background-color: $color-primario;
+                    margin-left: 2rem;
+                    color: whitesmoke;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    text-decoration: none;
+                }
+                
+                .navLink:hover {
+                    color: $color-secundario;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+
+    header{
+        .navbar{
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .navbar__logo {
+                align-items: flex-start;
+                width: 250px;
+                height: 40px;
+                flex: 1;
+            }
+
+            .navbar__links{
+                flex: 4;
+                justify-content: flex-end;
+        
+                .navLink {
+                    margin-left: 3rem;
+                    font-size: 1.65rem;
+                }
+        
+            } 
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1024px){
+
+    header {
+        .navbar{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .navbar__logo {
+                align-items: flex-start;
+                width: 250px;
+                height: 40px;
+                flex: 1;
+            }
+        
+            .navbar__links{
+                justify-content: flex-end;
+                margin-right: 10%;
+                flex: 4;
+
+                .navLink {
+                    margin-left: 6rem;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
