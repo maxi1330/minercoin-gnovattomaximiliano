@@ -1,0 +1,5 @@
+# Ignora Sass
+styles/style.css
+styles/style.css.map
+.sass-cache
+.sass-cache/*
