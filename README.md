@@ -1,0 +1,2 @@
+# minercoin
+gnovatto maximiliano
