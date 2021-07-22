@@ -1,0 +1,12 @@
+{
+  "name": "minercoin_gnovatto_maximiliano",
+  "version": "1.0.0",
+  "description": "Proyecto web de minercoin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-css": "sass --watch styles/style.scss styles/style.css"
+  },
+  "author": "Gnovatto Maximiliano",
+  "license": "ISC"
+}
