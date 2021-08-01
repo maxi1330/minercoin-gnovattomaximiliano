@@ -1,0 +1,34 @@
+/* ================================ 404 ================================ */
+.image404 {
+    width: 350px;
+}
+
+.botonVolverInicio{
+    margin-left: 2rem;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.columna404{
+    height: 100%;
+}
+
+.tituloError{
+    margin-top: 40px;
+    font-weight: bold;
+    @include textosPrincipales(3rem, 600);
+}
+
+.mensajeError{
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.btnBackToHome {
+    margin-top: 0.5rem;
+    width: 27rem;
+    height: 3rem;
+    @include botonNegro();
+}
